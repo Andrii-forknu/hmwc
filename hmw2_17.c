@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+//comment
 double arctg(double x) {
     return atan(x);
 }
