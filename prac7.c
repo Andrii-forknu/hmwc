@@ -107,7 +107,23 @@ double dot_product(double v1[], double v2[], int n) {
     }
     return sum;
 }
+void taskn(){
+    int matrix[3][3] = {{1,2,3}, {4,5,6}, {7,8,9}};
+    int N, M;
+    printf("Введіть число M: ");
+        scanf("%d", M);
+    printf("Введіть число N: ");
+        scanf("%d", N);
+    for (int i = 0; i < 3; i++) {
+        for (int k = 0; k < 3; k++) {
+        if (matrix[i][k] == M) {
+            matrix[i][k] = N;
+        }
 
+    }
+    }
+printf("%d", matrix);
+}
 int main() {
     int n;
     double vectorA[MAX_SIZE], vectorB[MAX_SIZE], vectorSum[MAX_SIZE];
@@ -130,6 +146,6 @@ int main() {
 
     double scalar = dot_product(vectorA, vectorB, n);
     printf("Скалярний добуток (A * B) = %.4f\n", scalar);
-
+    taskn();
     return 0;
 }
