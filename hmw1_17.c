@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-
+//comment
 int main() {
     long double x;
     
