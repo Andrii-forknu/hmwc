@@ -48,6 +48,19 @@ double finder(double matrix[MAX_SIZE][MAX_SIZE], int k, int m, int n){
     }
     return result;
 }
+
+double finder(double* matrix, int k, int m, int n){
+    int result = 0;
+    for(int i = 0; i < m; i++) {
+        int j = i-k;
+        if((j<n)&&(j>=0)) {
+              result += matrix[i*m+j];
+        }
+    }
+    return result;
+}
+
+
 int main(){
    double matrix[MAX_SIZE][MAX_SIZE];
     int n, m;
