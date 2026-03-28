@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-
+//comment
 double function_15_a(double x, double y) {
     return pow(x, 3) + 3 * pow(x, 2) * y + 3 * x * pow(y, 2) + pow(y, 3);
 }
